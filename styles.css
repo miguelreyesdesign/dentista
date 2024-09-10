@@ -226,37 +226,26 @@ h1{
 
 .carrusel{
     width: 70vw;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 #equipo{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     gap: 0 50px;
     height: 100vh;
-    animation: scrollX 20s linear infinite;
+}
+
+#equipo div{
+    margin: 250px 0 0 0;
 }
 
 #equipo div img{
     width: 250px;
     height: 250px;
 }
-
-@keyframes scrollX {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-#equipo:hover{
-    animation-play-state: paused;
-}
-
 /* ----------consultorio -------------- */
 
 .consultorio{
@@ -282,8 +271,8 @@ h1{
 
 .textcons{
     display: flex;
-    line-height: 2.5;
-    font-size: 20px;
+    line-height: 2;
+    font-size: 17px;
 
 }
 
